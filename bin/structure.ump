@@ -1,0 +1,20 @@
+class Customer {
+  String name;
+  String address;
+  String gender;
+  int age;
+  1 -- 1 Account;
+}
+class Order {
+  String date;
+  String item;
+  String nameOnOrder;
+  int quantity;
+}
+class Account {
+  int accountNum;
+  String accountHolderName;
+  String dateCreated;
+  boolean active;
+  1 -- * Order;
+}
